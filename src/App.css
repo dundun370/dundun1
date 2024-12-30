@@ -1,0 +1,147 @@
+/* 设置 body 和 html 使背景颜色覆盖整个页面 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #FDEEF4; /* 背景颜色 */
+}
+
+/* 设置 .App 容器占满整个页面 */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+
+.title {
+  font-size: 2.5em;
+  color: #F1A1C1;
+  margin-bottom: 20px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #F1A1C1;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.connected-text {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #F1A1C1;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #F1A1C1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #E08FAC;
+}
+
+.btn:disabled {
+  background-color: #F5C9D6;
+  cursor: not-allowed;
+}
+
+.btn-remove {
+  background-color: #FF6F91;
+}
+
+.btn-remove:hover {
+  background-color: #E05A79;
+}
+
+.nft-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.listBox {
+  background-color: #fff;
+  border: 1px solid #F1A1C1;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.listBox:hover {
+  transform: scale(1.05);
+}
+
+.listImg img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.listTitle h3 {
+  color: #F1A1C1;
+  margin: 10px 0;
+}
+
+.listRemark p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.listBtnBox {
+  margin-top: 10px;
+}
+
+.sale-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sale-item {
+  background-color: #fff;
+  border: 1px solid #F1A1C1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
